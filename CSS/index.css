@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(243,229,216);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* boxcolor rgb(255,247,252) */
+h1{
+    font-family: 'Young Serif', serif;
+    color: rgb(131,70,52);
+}
+h3{
+    font-weight: bold;
+    margin-left: 20px;
+}
+ul>li{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+span , table tr td:nth-last-child(1){
+    color: rgb(131,70,52);
+    font-weight: bold;
+    
+}
+p{
+    font-size: 16px;
+}
+
+.image{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.image img{
+    height: 30%;
+    width: 85%;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.container{
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.container>.time{
+    background-color:rgb(255,247,252) ;
+    /* border: 1px solid black; */
+    width: 85%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container>.ingredients, .container>.instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    /* border: 2px solid red; */
+    width: 85%;
+    border-bottom: 1px solid rgb(243,229,216);
+}
+.container>.instructions>ol>li{
+    margin: 10px;
+
+}
+table{
+    border-collapse: collapse;
+    margin-left: 2rem;
+
+}
+table tr td{
+    border-bottom: 1px solid  rgb(243,229,216);
+    padding: 10px;
+    
+
+}
+table tr td:nth-last-child(1){
+    margin-left: 20px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* for mobile */
+@media screen and (max-width: 767px) {
+   .image img{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    border-radius: 0%;
+   }
+   .one, .time,.ingredients,.instructions,.nutrition{
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+}
