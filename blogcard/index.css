@@ -1,0 +1,84 @@
+main{
+    height: 100vh;
+    width: 100vw;
+    /* font-size: 1rem; */
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245,208,78);
+}
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: auto;
+    width: 23.3%;
+    box-shadow: 5px 5px 2px black;
+    background-color: white;
+}
+.card >.learning .text{
+    color: rgb(161,161,161);
+}
+.image img{
+    border-radius: 10px;
+    height: auto;
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+    
+}
+.card .learning > p{
+    font-weight: bolder;
+    padding: 3px;
+    height: 1rem;
+    background-color: rgb(242,210,71);
+    width: 4rem;
+    border-radius: 3px;
+    font-size:small;
+    
+    text-align: center;
+}
+.card .learning{
+    margin-left: 1rem;
+    margin-top: 5px;
+    font-size: small;
+}
+.card .learning h3{
+    font-weight:500;
+}
+.card .learning h3:hover{
+    color:rgb(242,210,71);
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+footer>img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0rem;
+}
+footer>span{
+    margin:5px;
+    margin-left: 10px;
+}
+
+/* fontweight and cursor color */
+@media screen and (max-width:400px) {
+    .card{
+        height: auto;
+        width:85% ;
+        margin: 1rem auto;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+    /* Add your CSS rules specific to tablets here */
+    .card{
+        height: auto;
+        width: 30%;
+        margin: 1rem auto;
+    }
+}
